@@ -1,6 +1,6 @@
 // Middleware auth realizzato in classe
 const authMiddleware = (request, response, next) => {
-    console.log("Auth Middleware: Deve controllare se dentro l'header esiste la chiave corretta");
+    console.log("Route Controllata");
     const {headers} = request;
 
     if (headers['secret'] === process.env.API_KEY) {
